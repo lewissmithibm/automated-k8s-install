@@ -2,7 +2,7 @@
 
 Ansible install scripts for installing kubernetes onto a set of pre "created" nodes.
 
-##Prerequisites
+## Prerequisites
 
 You require the following to run this installation.
 
@@ -10,7 +10,7 @@ You require the following to run this installation.
 - Docker
 - 1 Master and minimum 2 worker nodes that you have ssh key access to.
 
-##Steps
+## Steps
 
 Clone this repo and cd into it.
 
@@ -34,7 +34,7 @@ Set up the Worker node
 
 `ansible-playbook -i hosts worker.yml`
 
-##Confirm Successful install
+## Confirm Successful install
 
 SSH into your master node
 
@@ -46,7 +46,7 @@ Get nodes and you should see your 3 nodes all in the ready state
 
 `kubectl get nodes`
 
-##Known issues
+## Known issues
 
 - Currently installs K8s version 1.14, this needs to be updated to version 1.17
 - You should ssh into each of your nodes to accept the connection before running the install as ansible can't seem to handle the yes/no question
