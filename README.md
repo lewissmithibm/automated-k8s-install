@@ -34,7 +34,7 @@ Set up the Worker node
 
 `ansible-playbook -i hosts worker.yml`
 
-## Confirm Successful install
+## Confirm successful install
 
 SSH into your master node
 
