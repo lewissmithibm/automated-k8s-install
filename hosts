@@ -1,9 +1,9 @@
 [masters]
-master ansible_host=165.22.124.100 ansible_user=root
+master ansible_host=<MASTER_IP> ansible_user=root
 
 [workers]
-worker1 ansible_host=178.62.121.171 ansible_user=root
-worker2 ansible_host=178.128.166.68 ansible_user=root
+worker1 ansible_host=<WORKER_IP> ansible_user=root
+worker2 ansible_host=<WORKER_IP> ansible_user=root
 
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
